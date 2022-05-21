@@ -72,13 +72,6 @@ function update_presence() {
 }
 
 function copymail() {
-        navigator.clipboard.writeText('nothing')
-        toastr.options = {
-            "debug": false,
-            "positionClass": "toast-bottom-left",
-            "timeOut": "1000",
-            "color": '#fff'
-        };
-        toastr.success('Copied email to clipboard!', {
-            })
-      }
+        navigator.clipboard.writeText('aw3rque@gmail.com') 
+        console.log("mail kopyalandi!")
+    }

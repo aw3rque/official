@@ -1,5 +1,5 @@
 async function customstatus() {
-    const presence = (await fetch("https://api.lanyard.rest/v1/users/280696584889696257").then(_res => _res.json()).catch(() => null))?.data;
+    const presence = (await fetch("https://api.lanyard.rest/v1/users/280750521839517708").then(_res => _res.json()).catch(() => null))?.data;
     if (!presence) return;
     const customStatus = presence.activities.find(_activity => _activity.name === "Custom Status");
     if (customStatus) document.getElementsByClassName("statuss")[0].innerHTML = `${customStatus.emoji?.id ? `<img id="custom-status-emoji" src="https://cdn.discordapp.com/emojis/${customStatus.emoji.id}.${customStatus.emoji.animated ? "gif" : "png"}?size=24&quality=lossless">` : ""} ${customStatus.state}`;
@@ -22,7 +22,7 @@ var statusIcon = document.getElementById("statusIcon");
                 JSON.stringify({
                     op: 2,
                     d: {
-                        subscribe_to_id: "280696584889696257", // YOUR DISCORD ID
+                        subscribe_to_id: "280750521839517708", // YOUR DISCORD ID
                     },
                 })
             );
